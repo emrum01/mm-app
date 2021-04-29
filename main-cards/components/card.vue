@@ -1,11 +1,6 @@
 <template lang="pug">
-  v-card(:loading="loading"
-    class="mx-auto my-12"
-    max-width="374")
-    v-card-text
-      p {{name}}
-    v-card-action
-      v-btn
+  v-card
+    button(class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ...")
 </template>
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
@@ -21,4 +16,4 @@ export default class index extends Vue {
   }
 }
 </script>
-<style lang="scss" scoped></style>
+<style></style>
