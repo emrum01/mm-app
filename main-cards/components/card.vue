@@ -1,6 +1,11 @@
 <template lang="pug">
-  v-card
-    button(class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ...")
+  .init
+    v-card.card
+      v-card-title(class="justify-center")
+        div
+          h3 テスト
+      v-card-actions
+        button.arrow
 </template>
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
@@ -16,4 +21,21 @@ export default class index extends Vue {
   }
 }
 </script>
-<style></style>
+<style lang="scss" scoped>
+.init {
+}
+.init ::v-deep .card {
+  background: #ffbdbd;
+  outline: none;
+}
+.card ::v-deep .arrow {
+  width: 0px;
+  border-color: #d9534f;
+  border-style: solid;
+  border-width: 30px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  outline: none;
+}
+</style>
